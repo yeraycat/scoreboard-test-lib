@@ -4,7 +4,7 @@
         "lib": ["es5", "es2015", "es2016", "dom", "esnext"],
         "jsx": "react",
         "module": "es2015",
-        "types": ["node"],
+        "types": ["jest", "node"],
         "moduleResolution": "node",
         "noImplicitAny": true,
         "noUnusedLocals": true,
@@ -16,5 +16,6 @@
         "forceConsistentCasingInFileNames": true,
         "strict": true
     },
-    "include": ["src/**/*.ts", "src/**/*.tsx"]
+    "include": ["src/**/*.ts", "src/**/*.tsx"],
+    "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"]
 }
